@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop time</title>
+  </head>
+  <body>
+    <!-- ### E1 ###  -->
+    <h1>E1</h1>
+    <div id="display_e1">0</div>
+    <div id="control-container">
+      <button onclick="" id="+">Tăng</button>
+      <button onclick="" id="reset">Reset</button>
+      <button onclick="" id="-">Giảm</button>
+    </div>
+
+    <!-- ### E2 ###  -->
+    <h1>E2</h1>
+    <p>Đoán một số từ 1 đến 100:</p>
+    <input type="number" id="guess" />
+    <button onclick="guessNumber()">Đoán</button>
+    <button id="reset" onclick="resetGame()">Reset</button>
+    <p id="result"></p>
+    <p id="counte2"></p>
+
+    <!-- ### E3 ###  -->
+    <h1>E3</h1>
+    <p>Chuyển đổi nhiệt độ</p>
+    <input type="text" id="textBox_e3" value="0" />
+    <br />
+    <input type="radio" name="unit" id="CtoF_e3" />
+    <label for="CtoF">C to F</label>
+    <br />
+    <input type="radio" name="unit" id="FtoC_e3" />
+    <label for="FtoC">F to C</label>
+    <br />
+    <button type="button" onclick="convert()">Submit</button>
+    <p id="result_e3"></p>
+
+    <!-- ### E4 ###  -->
+    <h1>E4</h1>
+    <p>Rice Doll</p>
+    <input type="number" name="unit" id="int_e4" max="6" min="1" />
+    <button id="submit_e4" onclick="roll_e4()">Roll</button>
+    <p id="result_e4"></p>
+
+    <!-- ### E5 ###  -->
+    <h1>E5</h1>
+    <p>Open Window</p>
+    <input type="button" value="Open 'myWindow'" onclick="openWin()" />
+    <input type="button" value="Close 'myWindow'" onclick="closeWin()" />
+
+    <!-- ### E6 ###  -->
+    <h1>E6</h1>
+    <h2 id="timer_e6"></h2>
+    <input
+      type="text"
+      id="timeleft_e6"
+      name="unit"
+      placeholder="Nhập thời gian để đếm ngược"
+    />
+    <br />
+    <button id="start_e6">Start</button>
+    <button id="stop_e6">Stop</button>
+
+    <!-- ### E7 ### -->
+    <h1>E7</h1>
+    <h2 id="time_e7">00:00:00</h2>
+
+    <!-- ### E8 ###  -->
+    <h1>E8</h1>
+    <h2 id="time_e8">
+      <span id="hour_e8"></span>
+      <span>:</span>
+      <span id="minute_e8"></span>
+      <span>:</span>
+      <span id="second_e8"></span>
+      <span>:</span>
+      <span id="milisecond_e8"></span>
+    </h2>
+    <button id="start_e8">Start/Continue</button>
+    <button id="stop_e8">Stop</button>
+    <button id="reset_e8">Reset</button>
+
+    <!-- ### E9 ###  -->
+    <h1>E9</h1>
+    <div id="calculator">
+      <input id="display_e9" readonly />
+      <div id="keys">
+        <button onclick="submit_to_display('1')">1</button>
+        <button onclick="submit_to_display('2')">2</button>
+        <button onclick="submit_to_display('3')">3</button>
+        <button onclick="submit_to_display('4')">4</button>
+        <button onclick="submit_to_display('5')">5</button>
+        <button onclick="submit_to_display('6')">6</button>
+        <button onclick="submit_to_display('7')">7</button>
+        <button onclick="submit_to_display('8')">8</button>
+        <button onclick="submit_to_display('9')">9</button>
+        <button onclick="submit_to_display('0')">0</button>
+        <br />
+        <button onclick="submit_to_display('-')">-</button>
+        <button onclick="submit_to_display('+')">+</button>
+        <button onclick="submit_to_display('*')">*</button>
+        <button onclick="submit_to_display('/')">/</button><br />
+        <button onclick="calculate()">=</button>
+        <button onclick="clear_display()">Clear</button>
+      </div>
+    </div>
+
+    <!-- ### EJ1 ###  -->
+    <h1>EJ1</h1>
+    <div class="ej1">
+      <button id="submit_ej1">Submit</button>
+    </div>
+    <!-- ### JS ###  -->
+    <script src="main.js"></script>
+  </body>
+</html>

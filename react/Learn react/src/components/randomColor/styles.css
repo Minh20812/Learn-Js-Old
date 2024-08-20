@@ -1,0 +1,14 @@
+.randomColor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid hsl(0, 0%, 40%);
+}
+
+.textInBox {
+  color: black;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
+}

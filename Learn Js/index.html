@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Practise Js on 1 day</title>
+  </head>
+  <body>
+    <!-- 1  -->
+    <h1>1</h1>
+    <div id="display__1">0</div>
+    <button id="+">+</button>
+    <button id="-">-</button>
+    <button id="reset">reset</button>
+
+    <!-- 2 -->
+    <h1>2</h1>
+    <p>Guess a number 1 to 100</p>
+    <input type="number" name="Guess" id="guess__2" />
+    <button id="submit__2">Submit</button>
+    <div id="result__2">Result</div>
+
+    <!-- 3 -->
+    <h1>3</h1>
+    <p>Change money</p>
+    <input type="number" id="change_money__3" />
+    <input type="radio" name="choice" id="vn_to_usd" value="vn-usd" />
+    <span>Vn to Usd</span>
+    <input type="radio" name="choice" id="usd_to_vn" value="usd-vn" />
+    <span>Usd to Vn</span>
+    <div id="result__3"></div>
+
+    <!-- 4 -->
+    <h1>4</h1>
+    <p>Roll Dice</p>
+    <input
+      type="number"
+      name="Roll"
+      id="roll__4"
+      placeholder="Give me number 1 to 10"
+    />
+    <div id="result__4"></div>
+
+    <!-- 5 -->
+    <h1>5</h1>
+    <p>Digital Clock</p>
+    <div id="clock__5">00:00:00</div>
+
+    <!-- 6 -->
+    <h1>6</h1>
+    <p>Stop Watch</p>
+    <div id="display__6"></div>
+    <button class="start__6" onclick="start()">Start</button>
+    <button class="stop__6" onclick="stop()">Stop</button>
+    <button class="reset__6" onclick="reset()">Reset</button>
+
+    <!-- 7 -->
+    <h1>7</h1>
+    <p>Calculate</p>
+    <div id="calculate">
+      <input id="display__7" readonly />
+      <div id="keys">
+        <button onclick="appendToDisplay('1')">1</button>
+        <button onclick="appendToDisplay('2')">2</button>
+        <button onclick="appendToDisplay('3')">3</button>
+        <button onclick="appendToDisplay('4')">4</button>
+        <button onclick="appendToDisplay('5')">5</button>
+        <button onclick="appendToDisplay('6')">6</button>
+        <button onclick="appendToDisplay('7')">7</button>
+        <button onclick="appendToDisplay('8')">8</button>
+        <button onclick="appendToDisplay('9')">9</button>
+        <button onclick="appendToDisplay('0')">0</button>
+        <button onclick="appendToDisplay('+')">+</button>
+        <button onclick="appendToDisplay('-')">-</button>
+        <button onclick="appendToDisplay('*')">*</button>
+        <button onclick="appendToDisplay('/')">/</button>
+        <button onclick="appendToDisplay('.')">.</button>
+        <button onclick="calculator()">=</button>
+        <button onclick="clearDisplay()">C</button>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <h1>8</h1>
+    <p>Rock Paper Scissors</p>
+    <button onclick="playerChoice('rock')">Rock</button>
+    <button onclick="playerChoice('paper')">Paper</button>
+    <button onclick="playerChoice('scissor')">Scissors</button>
+    <div id="playerDisplay"></div>
+    <div id="computerDisplay"></div>
+    <div id="result__8"></div>
+
+    <!-- 9 -->
+    <h1>9</h1>
+    <p>Image Slider</p>
+    <div class="slider">
+      <div class="slides">
+        <img
+          src="Default_A_handsome_female_around_22_years_old_short_black_hair_0.jpg"
+          alt="img0"
+          class="slide"
+        />
+        <img
+          src="Default_A_handsome_female_around_22_years_old_short_black_hair_1.jpg"
+          alt="img1"
+          class="slide"
+        />
+        <img
+          src="Default_A_handsome_female_around_22_years_old_short_black_hair_2.jpg"
+          alt="img2"
+          class="slide"
+        />
+        <img
+          src="Default_A_handsome_female_around_22_years_old_short_black_hair_3.jpg"
+          alt="img3"
+          class="slide"
+        />
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094</button>
+      <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <!-- 10 -->
+    <h1>10</h1>
+
+    <form class="weatherForm">
+      <input type="text" class="cityInput" placeholder="Enter City Name" />
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <div class="card" style="display: none;">
+      <!-- <h1 class="cityDisplay">Miami</h1>
+      <p class="tempDislay">25°C</p>
+      <p class="humidityDislay">Humidity: 70%</p>
+      <p class="descDislay">Cloudy</p>
+      <p class="weatherEmoji">😎</p>
+      <p class="errorDisplay">Please enter a city</p> -->
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
